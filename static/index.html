@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>FastAPI To-Do</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body { font-family: system-ui, Arial, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; }
+      h1 { margin-bottom: 1rem; }
+      form { display: flex; gap: .5rem; margin-bottom: 1rem; }
+      input[type="text"] { flex: 1; padding: .6rem; }
+      button { padding: .6rem .9rem; cursor: pointer; }
+      ul { list-style: none; padding: 0; }
+      li { display: flex; align-items: center; gap: .5rem; padding: .5rem 0; border-bottom: 1px solid #eee; }
+      li.done .title { text-decoration: line-through; color: #777; }
+      .spacer { flex: 1; }
+    </style>
+  </head>
+  <body>
+    <h1>To-Do</h1>
+    <form id="new-form">
+      <input id="new-title" type="text" placeholder="Add a task..." required />
+      <button type="submit">Add</button>
+    </form>
+
+    <ul id="list"></ul>
+
+    <script src="app.js"></script>
+  </body>
+</html>
